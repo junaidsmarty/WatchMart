@@ -1,0 +1,27 @@
+/*THIS CSS IS FOR NEWS.HTML PAGE*/
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.brand{
+    text-align: center;
+    background-color:lavenderblush;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 2%;
+    margin-top: 7%; 
+    
+}
+.row1 {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+
+

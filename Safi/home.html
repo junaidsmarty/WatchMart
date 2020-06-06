@@ -1,0 +1,219 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Big Watch Mart</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/stylestwo.css">
+    </head>
+    <body>
+        
+        <div class="abc">
+            <ul>
+                    <div class="logo"><a href="home.html"><img src="images/logoburned.png" alt="company logo"></a></div>
+                    <li><a href="#"><img src="images/cart2.png" alt="cart" width="28" height="28"></a></li>
+                    <li><a href="#home"><form>
+                            <input type="search" name="search" />
+                            <input type="submit" value="Search" />
+                            </form></a></li>
+              <li><a href="index.html">About us</a></li>
+              <li><a href="news.html">News</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Brands</a>
+                <div class="dropdown-content">
+                  <a href="#">ROLEX</a>
+                  <a href="#">AUDEMARS PIGUET</a>
+                  <a href="brands.html">MORE+</a>
+                </div>
+                <li><a href="home.html">Home</a></li>
+              </li>
+            </ul>
+            </div>
+                    <div class="hero-image">
+                    <div class="hero-text">
+                      <h1 style="font-size:50px">Big Watch Mart</h1>
+                      <p>Welcome into the watch World</p>
+                      <a href="registration.html"><button>BUY</button></a>
+                    </div>
+                  </div>
+                  <div class="jk">
+                    <p>CRAFTSMANSHIP</p>
+                    <p></p>
+                    <h1>The Art of Fusion</h1>
+                  </div>                  
+                  <div class="row2">
+                        <div class="column">
+                          <img src="images/watch5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                          <img src="images/watch6.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                          <img src="images/watch7.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                          <img src="images/watch8.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                        </div>
+                      </div>
+                      
+                      <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="images/watch5.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="images/watch6.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="images/watch7.jpg" style="width:100%">
+                          </div>
+                          
+                          <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="images/watch8.jpg" style="width:100%">
+                          </div>
+                          
+                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      
+                          <div class="caption-container">
+                            <p id="caption"></p>
+                          </div>
+                      
+                      
+                          <div class="column">
+                            <img class="demo cursor" src="images/watch5.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="images/watch6.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="images/watch7.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="images/watch8.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <script>
+                      function openModal() {
+                        document.getElementById("myModal").style.display = "block";
+                      }
+                      
+                      function closeModal() {
+                        document.getElementById("myModal").style.display = "none";
+                      }
+                      
+                      var slideIndex = 1;
+                      showSlides(slideIndex);
+                      
+                      function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                      }
+                      
+                      function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                      }
+                      
+                      function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        var captionText = document.getElementById("caption");
+                        if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " active";
+                        captionText.innerHTML = dots[slideIndex-1].alt;
+                      }
+                      </script>
+           <div class="jk">
+            <p>OFFICIAL TIMEKEEPER</p>
+            <p></p>
+            <h1>Power Meets Precision</h1>
+          </div>                  
+                     
+          <div class="hero-image1">
+            <div class="hero-text1">
+              <h1 style="font-size:50px">PARTNERSHIPS</h1>
+              <p>Official Sponsor of Formula 1 Races</p>
+              <a href="brands.html"><button>DISCOVER MORE</button></a>
+            </div>
+          </div>   
+          <div class="jk">
+            <p>COLLECTION</p>
+            <p></p>
+            <h1>Meet our Timepices</h1>
+          </div>
+          <div class="flex-container">
+            <div class="hub"><img src="images/hublot1.jpg"></div>
+            <div class="hub"><img src="images/hublot2.jpg"></div>
+            <div class="hub"><img src="images/hublot3.jpg"></div>
+            <div class="hub"><img src="images/hublot4.jpg"></div> 
+          </div>
+          <div class="jk">
+            <p>WATCH MAKING</p>
+            <p></p>
+            <h1>The art of Timepices</h1>
+          </div>
+               
+          <div class="hero-image2">
+            <div class="hero-text2">
+              <h1 style="font-size:50px">CRAFTSMANSHIP </h1>
+              <p>THE ART OF FUSION</p>
+              <a href="index.html"><button>EXPLORE CRAFTSMANSHIP</button></a>
+            </div>
+          </div>                  
+                     
+        <div class="sea"> 
+            <div class="footer">
+                <div class="Col1">
+                    <ul>
+                        <li>About Us</li>
+                        <li>How it Works</li>
+                        <li>Why Choose Us</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="Col2">
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Testimonials</li>
+                        <li>Watch Exchange</li>
+                    </ul>
+                </div >
+                <div class="Col3">
+                    <p>Subscribe to get latest automotive news</p>
+                    <form action="" method="POST">
+                        <input type="email" name="mail">
+                        <input type="submit" name="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="Socials">
+                    <img src="images/fb.png" alt="">
+                    <img src="images/insta.png" alt="">
+                    <img src="images/twitter.png" alt="">
+                    <img src="images/youtube.png" alt="">
+                </div>
+                <div class="copy">
+                <p >Big Watch Mart.com FZE - © 2019, All rights reserved</p>
+            </div>
+            </div>
+        </div>            
+    </body>
+    </html>
+    
