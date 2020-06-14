@@ -1,3 +1,7 @@
+# Project Members
+Front end - Usman Ahmed (14946)
+Back end - Junaid Jabbar (141816)
+
 # Online-Watch-Store
 An online luxury watch store
 
